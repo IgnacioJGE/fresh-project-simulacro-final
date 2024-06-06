@@ -19,6 +19,8 @@ export const handler: Handlers = {
             email:email,
             password:password,
         })
+        console.log(email)
+
         const data=respuesta.data;
         const JWT_SECRET = Deno.env.get("JWT_SECRET");
         if (!JWT_SECRET) {
