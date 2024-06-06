@@ -49,6 +49,7 @@ export const handler: Handlers = {
           headers,
         });
     } catch (error) {
+      console.log("vaya mierdon colega")
         const fail:boolean=true;
         return ctx.render({fail})
     }
